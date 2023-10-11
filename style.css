@@ -76,39 +76,15 @@ nav button:hover {
 
 /* Define styles for the middle column containing articles */
 .middle-column {
-  flex: 2; /* Set a fixed width for the middle column */
+  width: 650px;
   background-color: white; /* Set background color */
   padding: 20px; /* Add spacing around articles */
   float: right;
 }
 
-@media screen and (max-width: 1000px) {
-  .middle-column {
-    flex: 3; /* Adjust the size for smaller screens */
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .middle-column {
-    flex: 4; /* Adjust the size for smaller screens */
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .middle-column {
-    flex: 5; /* Adjust the size for smaller screens */
-  }
-}
-
 @media screen and (max-width: 700px) {
   .middle-column {
-    flex: 6; /* Adjust the size for smaller screens */
-  }
-}
-
-@media screen and (max-width: 650px) {
-  .middle-column {
-    flex: 10; /* Adjust the size for smaller screens */
+    width: 450px;
   }
 }
 
@@ -126,8 +102,13 @@ nav button:hover {
 
 @media screen and (max-width: 700px) {
   .about .left {
-    width: 200px; /* Adjust the size for smaller screens */
+    width: 225px; /* Adjust the size for smaller screens */
   }
+}
+
+img {
+  max-width: 200px;
+  max-height: auto;
 }
 
 .about .right {
@@ -137,7 +118,7 @@ nav button:hover {
 
 @media screen and (max-width: 700px) {
   .about .right {
-    width: 200px; /* Adjust the size for smaller screens */
+    width: 175px; /* Adjust the size for smaller screens */
   }
 }
 
@@ -145,27 +126,55 @@ nav button:hover {
   font-size: 1.2em;
 }
 
+.contact-list {
+  list-style-type: none;
+  margin-left: -30px;
+}
+
 .resume {
   display: none; /* Hide all articles by default */
   margin-bottom: 20px; /* Add spacing between articles */
 }
 
+.projects-list li:has(a,strong){
+  list-style-type: none;
+  margin-left: -30px;
+}
+
 .chess {
   display: none; /* Hide all articles by default */
   margin-bottom: 20px; /* Add spacing between articles */
+  text-align: center;
+}
+
+.chess figure {
+  margin-top: -50px;
+}
+
+@media screen and (max-width: 700px) {
+  .chess video {
+    width: 350px;
+  }
+  .chess figure {
+    margin-top: -90px;
+  }
 }
 
 .jobly {
   display: none; /* Hide all articles by default */
   margin-bottom: 20px; /* Add spacing between articles */
+  text-align: center;
 }
 
-img {
-  max-width: 200px;
-  max-height: auto;
+.jobly figure {
+  margin-top: -50px;
 }
 
-.projects-list li:has(a,strong){
-  list-style-type: none;
-  margin-left: -30px;
+@media screen and (max-width: 700px) {
+  .jobly video {
+    width: 350px;
+  }
+  .chess figure {
+    margin-top: -90px;
+  }
 }
