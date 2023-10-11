@@ -1,23 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nathan Newman's Website</title>
     <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-    <h1>Nathan Newman</h1>
-    <img src="images/nathan-newman.JPG">
-    <h3>Welcome to my web page.</h3>
-    <p>What do you want to do?</p>
-    <ul>
-        <li><a href="todo-list/index.html">Make a todo list.</li>
-        <li><a href="memory-game/index.html">Play a memory game.</li>
-    </ul>
-</body>
-
+    <script
+      src="https://kit.fontawesome.com/b11c4595c6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <button id="nav-about"><span>About</span></button>
+          </li>
+          <li>
+            <button id="nav-resume"><span>Resume</span></button>
+          </li>
+          <li>
+            <button id="nav-chess"><span>Chess</span></button>
+          </li>
+          <li>
+            <button id="nav-jobly"><span>Jobly</span></button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="side-column left"></div>
+        <div class="middle-column">
+          <article class="about">
+            <div class="left">
+              <h1>Nathan Newman</h1>
+              <img src="./images/nathan-newman.jpg" />
+              <h2>Contact Info:</h2>
+              <ul>
+                <li><i class="fa-solid fa-phone"></i>785-614-2910</li>
+                <li>
+                  <i class="fa-regular fa-envelope"></i>nathan_newman@mail.com
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/nathan-newman-53358a35/"
+                    >LinkedIn</a
+                  >
+                </li>
+                <li><a href="https://github.com/NathanNewman">GitHub</a></li>
+              </ul>
+            </div>
+            <div class="right">
+              <p>
+                I am a Software Engineering Student at Springboard. My current
+                experience in both front end web design using React.js, HTML,
+                CSS, and JavaScript; and back end programming using Node.js,
+                Express.js, Python, Flask, and PostgreSQL. I am driven to learn
+                and solve complexed software related problems.
+              </p>
+              <p>
+                Being a SoftwareEngineer is something I dreamed about since high
+                school. I've spent the last 15 years working in the Real Estate
+                Appraisal field, helping out my father with our family business.
+                He has recently retired, so we have closed the business as I am
+                instead pursuing my dream. I'm well experienced working in a
+                home office environment, so I am able to work remote effectively
+                if necessary. I also have education in Organizational Leadership
+                and played sports in high school, so working on a team is also
+                something I enjoy and am capable of.
+              </p>
+            </div>
+          </article>
+          <article class="resume">
+            <h1>Nathan Newman</h1>
+            <ul>
+              <li>
+                Software Engineer looking to start a career in web design.
+              </li>
+              <li>Riley, KS | (785) 614-2910 | nathan_newman@mail.com</li>
+              <li>
+                <a href="https://github.com/NathanNewman">GitHub</a> |
+                <a href="https://www.linkedin.com/in/nathan-newman-53358a35/"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+            <h2>Professional Summary</h2>
+            <p>
+              A graduate from the Software Engineering bootcamp at Springboard.
+              Current experience is as a full-stack web developer, interested in
+              both frontend and backend work.
+            </p>
+            <h2>Skills</h2>
+            <ul>
+              <li>
+                <b>Languages: </b>JavaScript(ES6+), Python, HTML5, CSS3, SQL
+              </li>
+              <li>
+                <b>Frameworks & Libraries: </b>React, Node, Express, Flask,
+                jQuery, Bootstrap, Jest
+              </li>
+              <li>
+                <b>Database & Industry Tools: </b>PostgreSQL, Git, GitHub, REST
+                API
+              </li>
+            </ul>
+            <h2>Projects</h2>
+            <ul class="projects-list">
+              <li>
+                <a
+                  href="https://64e767d17a998b0e68e608db--vermillion-gelato-67522b.netlify.app/#/login"
+                  >Chess</a
+                >
+                - a website that allows users to play chess.
+              </li>
+              <li>Used Stockfish engine to create an AI opponent.</li>
+              <li>Created a match replay system.</li>
+              <li>Includes user signup and login/logout features.</li>
+              <li>
+                <b>Tech Stack: </b>Node, Express, React, PostgreSQL, CSS, Axios,
+                jsonwebtoken, Chess.js
+              </li>
+              <li>
+                <a
+                  href="https://64e3a257539ed400a0ff7f46--vermillion-gelato-67522b.netlify.app/#/"
+                  >Jobly</a
+                >
+                - a website that allows users to apply for jobs.
+              </li>
+              <li>Includes user signup login, and logout features.</li>
+              <li>
+                Implemented a RESTful API backend to manage user authentication.
+              </li>
+              <li>
+                <b>Tech Stack: </b>Node, Express, React, PostgreSQL, CSS, Axios,
+                jsonwebtoken, uuid
+              </li>
+              <li>
+                <strong>Investor</strong> - a competitive investor website designed to
+                test out investment strategies.
+              </li>
+              <li>(currently undeployed)</li>
+              <li>Used Alpha Advantage, an external API.</li>
+              <li>Included a leader board to compare best stock portfolios.</li>
+              <li>
+                <b>Tech Stack: </b>Python, Flask, PostgreSQL, JavaScript, HTML,
+                CSS, Axios, jsonwebtoken, uuid
+              </li>
+            </ul>
+            <h2>Education</h2>
+            <ul>
+              <li>
+                <b
+                  >Software Engineering Certification, Springboard: September,
+                  2023</b
+                >
+              </li>
+              <li>
+                <b
+                  >Bachelor's Degree, Organizational Leadership, Friends
+                  University: 2010</b
+                >
+              </li>
+            </ul>
+            <h2>Experience</h2>
+            <h3>
+              Software Engineering Student | Springboard | July 2022 - September
+              2023
+            </h3>
+            <ul>
+              <li>
+                Completed 800-hour course that covered key aspects of front-end
+                web development, back-end web development, databases, and data
+                structures and algorithms. Included 1:1 industry expert mentor
+                oversight, and completion of in-depth portfolio projects.
+              </li>
+              <li>
+                Honed skills in Web Development, JavaScript, DOM Manipulation,
+                Event Driven Programming, Git/Terminal/Github, Modern JavaScript
+                and Testing, AJAX, jQuery, ReactJS, Redux, SQL, PostgresQL,
+                Flask, Node, Express, Data Structures and Algorithms
+              </li>
+            </ul>
+            <h3>
+              Appraiser | Newman Appraisal Service | June 2008 - July 2022
+            </h3>
+            <ul>
+              <li>
+                Developed detailed appraisal reports, utilizing strong
+                analytical skills and incorporating market data, comparable
+                sales, and valuation techniques.
+              </li>
+              <li>
+                Collaborated with clients, including lenders, lawyers,
+                homeowners, and farmers to address inquiries and provide expert
+                advice on property valuation matters
+              </li>
+            </ul>
+          </article>
+          <article class="chess">
+            <!-- Article content -->
+          </article>
+          <article class="jobly">
+            <!-- Article content -->
+          </article>
+        </div>
+        <div class="side-column right"></div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>
