@@ -22,11 +22,24 @@
             <button id="nav-resume"><span>Resume</span></button>
           </li>
           <li>
+            <div class="projects">
+              <button id="nav-projects" class="projects-btn"><div class="projects-text">Projects</div></button>
+              <div id="myProjects" class="projects-content">
+                <button id="nav-chess"><span>Chess</span></button>
+                <button id="nav-investor"><span>Investor</span></button>
+                <button id="nav-jobly"><span>Jobly</span></button>
+              </div>
+            </div>
+          </li>
+          <!-- <li>
             <button id="nav-chess"><span>Chess</span></button>
           </li>
           <li>
-            <button id="nav-jobly"><span>Jobly</span></button>
+            <button id="nav-investor"><span>Investor</span></button>
           </li>
+          <li>
+            <button id="nav-jobly"><span>Jobly</span></button>
+          </li> -->
         </ul>
       </nav>
     </header>
@@ -75,7 +88,7 @@
           </article>
           <article class="resume">
             <h1>Nathan Newman</h1>
-            <ul>
+            <ul class="resume-summary">
               <li>
                 Software Engineer looking to start a career in web design.
               </li>
@@ -201,7 +214,7 @@
             </ul>
           </article>
           <article class="chess">
-            <h1>Chess</h1>
+            <h1><i class="fa-solid fa-chess"></i> Chess</h1>
             <figure>
               <video width="500" height="360" controls>
                 <source src="media/chess-video.mp4" type="video/mp4" />
@@ -217,6 +230,23 @@
                 to visit.
               </figcaption>
             </figure>
+          </article>
+          <article class="investor">
+            <h1>Investor</h1>
+            <figure>
+              <video width="500" height="360" controls>
+                <source src="media/investor-video.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            <figcaption>
+              Investor is a website that allows users to test mock stock portfolios using real market data. Click
+              <a
+                href="https://investor-klqu.onrender.com/"
+                >here</a
+              >
+              to visit.
+            </figcaption>
+          </figure>
           </article>
           <article class="jobly">
             <h1>Jobly</h1>

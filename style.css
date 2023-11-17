@@ -41,6 +41,7 @@ nav button span {
   ); /* Counteract the button's skew to keep text horizontal */
   transition: transform 0.3s ease; /* Add a transition for a smooth effect */
 }
+
 nav button:hover {
   background-color: white;
   color: blue;
@@ -50,6 +51,23 @@ nav button:hover {
     width: 100px; /* Adjust the padding for smaller screens */
   }
 }
+
+.projects {
+  position: relative;
+  display: inline-block;
+}
+
+.projects-content {
+  display: none;
+}
+
+.projects-text {
+  transform: skewX(
+    30deg
+  );
+}
+
+.show {display:block;}
 
 /* Create a container for the main content */
 .container {
@@ -136,9 +154,28 @@ img {
   margin-bottom: 20px; /* Add spacing between articles */
 }
 
+.resume-summary {
+  list-style-type: none;
+  margin-top: -10px;
+  margin-left: -20px
+}
+
+.resume-summary li {
+  margin-bottom: 5px;
+}
+
 .projects-list li:has(a,strong){
   list-style-type: none;
   margin-left: -30px;
+  border-top: solid;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.projects-list li:first-of-type {
+  border: none;
+  padding-top: 0;
+  margin-top: 0;
 }
 
 .chess {
@@ -156,6 +193,25 @@ img {
     width: 350px;
   }
   .chess figure {
+    margin-top: -90px;
+  }
+}
+
+.investor {
+  display: none; /* Hide all articles by default */
+  margin-bottom: 20px; /* Add spacing between articles */
+  text-align: center;
+}
+
+.investor figure {
+  margin-top: -50px;
+}
+
+@media screen and (max-width: 700px) {
+  .investor video {
+    width: 350px;
+  }
+  .investor figure {
     margin-top: -90px;
   }
 }
